@@ -11,8 +11,8 @@ public class DeviceInfoModel : MonoBehaviour
     public static bool hasNotchDevice() 
     {
 #if UNITY_EDITOR
-        bool isEditorDeviceHasNotchDecision = false;
-        return isEditorDeviceHasNotchDecision;
+        bool isEditorDeviceHasNotch = false;
+        return isEditorDeviceHasNotch;
 #else
         return !(Screen.height == Screen.safeArea.height);
 #endif
